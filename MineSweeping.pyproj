@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{cc3075bd-9871-4c08-a176-524e7b55ebae}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|TanchiShe</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+    <Compile Include="mineblock.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\0.bmp" />
+    <Content Include="resources\1.bmp" />
+    <Content Include="resources\2.bmp" />
+    <Content Include="resources\3.bmp" />
+    <Content Include="resources\4.bmp" />
+    <Content Include="resources\5.bmp" />
+    <Content Include="resources\6.bmp" />
+    <Content Include="resources\7.bmp" />
+    <Content Include="resources\8.bmp" />
+    <Content Include="resources\ask.bmp" />
+    <Content Include="resources\blank.bmp" />
+    <Content Include="resources\blood.bmp" />
+    <Content Include="resources\error.bmp" />
+    <Content Include="resources\face_fail.bmp" />
+    <Content Include="resources\face_normal.bmp" />
+    <Content Include="resources\face_success.bmp" />
+    <Content Include="resources\flag.bmp" />
+    <Content Include="resources\mine.bmp" />
+    <Content Include="resources\扫雷.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|TanchiShe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
